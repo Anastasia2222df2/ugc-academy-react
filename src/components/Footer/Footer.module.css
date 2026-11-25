@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 32px;
+  background-color: #141418;
+  color: #a5a5b5;
+  border-top: 1px solid #272730;
+  font-size: 14px;
+}
+
+.agency {
+  color: #ffffff;
+  font-weight: 600;
+}
