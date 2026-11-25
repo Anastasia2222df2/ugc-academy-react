@@ -6,10 +6,13 @@ import { CoursesPage } from './pages/CoursesPage/CoursesPage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
+const AGENCY_NAME = 'UGC Lab';
+const APP_VERSION = 'v1.0';
+
 export function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <Header agencyName={AGENCY_NAME} />
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -18,7 +21,7 @@ export function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      <Footer version="v1.0" />
+      <Footer agencyName={AGENCY_NAME} version={APP_VERSION} />
     </BrowserRouter>
   );
 }
