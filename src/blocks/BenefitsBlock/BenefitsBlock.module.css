@@ -1,0 +1,35 @@
+.section {
+  padding: 8px 0 24px;
+}
+
+.heading {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: var(--text-h, #f3f4f6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #e4e4ec;
+  background-color: #ffffff;
+}
+
+.cardTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #141418;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #4f4f60;
+}
