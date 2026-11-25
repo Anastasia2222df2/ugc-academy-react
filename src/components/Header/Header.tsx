@@ -1,11 +1,15 @@
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
-export function Header() {
+interface HeaderProps {
+  agencyName: string;
+}
+
+export function Header({ agencyName }: HeaderProps) {
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.brand}>
-        <span>UGC Lab</span>
+        <span>{agencyName}</span>
         <span className={styles.badge}>Academy</span>
       </Link>
 
