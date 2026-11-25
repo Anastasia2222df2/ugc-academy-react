@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.empty {
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px dashed #d2d2de;
+  color: #5a5a6d;
+}
